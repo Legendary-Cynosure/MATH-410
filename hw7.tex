@@ -10,6 +10,7 @@
 \usepackage{subcaption}
 \usepackage[export]{adjustbox}
 \usepackage{wrapfig}
+%------------------------------
 
 \newcommand{\StudentName}{Alexander Le}
 \newcommand{\AssignmentName}{HW 7}
@@ -68,6 +69,7 @@ Verifying Axiom 2: \space \space \space Let two vectors $\vec{u} = (u_1,u_2)$ an
 %1cc
 \begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=1. c) Solution Continued]
 Since addition on $V$ is the standard addition operation on $\mathbb{R}^2$, Axioms: 2, 3, 4, and 5 hold.\\ \\
+%
 Verifying Axiom 3: \space \space \space Here, $\vec{u}$ and $\vec{v}$ are defined in V, now let $\vec{w}=(w_1,w_2) \in V$      
 \begin{tabbing}
 \hspace*{10em}\= \hspace*{2em} \= \kill % set the tabbings
@@ -79,6 +81,19 @@ Verifying Axiom 3: \space \space \space Here, $\vec{u}$ and $\vec{v}$ are define
     \> \hspace{7.9em} =  $(\vec{u}+\vec{v})+\vec{w}$ \\
     Axiom 3 is closed under the Associative Property Under Addition.
 \end{tabbing}
+%
+Verifying Axiom 3: \space \space \space Here, $\vec{u}$ and $\vec{v}$ are defined in V, now let $\vec{w}=(w_1,w_2) \in V$      
+\begin{tabbing}
+\hspace*{10em}\= \hspace*{2em} \= \kill % set the tabbings
+    \>   Then, $\vec{u}+(\vec{v}+\vec{w}) = (u_1, u_2) +((v_1,v_2)+(w_1,w_2))$\\
+    \> \hspace{7.9em} =  $(u_1, u_2) +(v_1+w_1,v_2+w_2)$  \\
+    \> \hspace{7.9em} =  $(u_1+(v_1+w_1),u_2 +(v_2+w_2))$ \\
+    \> \hspace{7.9em} =  $((u_1+v_1)+w_1,(u_2+v_2)+w_2)$ \\
+    \> \hspace{7.9em} =  $((u_1,u_2)+(v_1,v_2))+(w_1,w_2)$ \\
+    \> \hspace{7.9em} =  $(\vec{u}+\vec{v})+\vec{w}$ \\
+    Axiom 3 is closed under the Associative Property Under Addition.
+\end{tabbing}
+%
 \end{tcolorbox}
 
 %1d
