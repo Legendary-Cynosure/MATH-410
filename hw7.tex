@@ -1,0 +1,101 @@
+\documentclass[addpoints]{exam}
+
+\usepackage{amsmath,enumitem,wrapfig}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{amsfonts}
+
+%Image-related packages
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+%------------------------------
+
+\newcommand{\StudentName}{Alexander Le}
+\newcommand{\AssignmentName}{HW 7}
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheadrule
+\firstpageheader{MATH 410}{\StudentName}{\AssignmentName}
+\runningheader{MATH 410}{\StudentName}{\AssignmentName}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+\printanswers
+
+\begin{document}
+
+\begin{tcolorbox}[colback=white!5!white,colframe=gray!75!black,title=Disclaimer to Prof. Steever]
+  I usually write my homework on an iPad but these sections were incredibly painful to write-out by hand both neatly and legibly. What you see here is my homework typed-up using \LaTeX. I made the decision to switch to \LaTeX \space for clarity and wanted to put this disclaimer to say that despite my homework being typed up, I have indeed done the work to practice and study these problems as I would have normally if I wrote them out on paper. Indeed, it proved just as painful initially to set up and learn to use \LaTeX.
+\end{tcolorbox}
+
+\begin{center}
+ \section*{HW 7: 4.1, 4.2, 4.3}
+\end{center}
+
+\section*{Section 4.1: Real Vector Spaces}
+
+
+\begin{figure}[h]
+    \includegraphics[width=0.5\linewidth]{4.1_n1.png}
+\end{figure}
+% 1a
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=1. a) Solution]
+   $\vec{u}+\vec{v} = (-1+3, 2+4) = (2, 6) $ \\
+   $k \vec{u} = (0, 3(4)) = (0, 12)$ 
+\end{tcolorbox}
+
+% 1b
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=1. b) Solution]
+The sum $\vec{u}+\vec{v}$ and the product $k\vec{u}$ are both ordered pairs of real numbers in $V$.
+\end{tcolorbox}
+
+%1c
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=1. c) Solution]
+Since addition on $V$ is the standard addition operation on $\mathbb{R}^2$, Axioms: 2, 3, 4, and 5 hold.\\ \\
+Verifying Axiom 2: \space \space \space Let two vectors $\vec{u} = (u_1,u_2)$ and $\vec{v}=(v_1,v_2) \in V$      
+\begin{tabbing}
+\hspace*{10em}\= \hspace*{2em} \= \kill % set the tabbings
+    \>   Then, $\vec{u}+\vec{v} = (u_1, u_2) +(v_1,v_2) = (u_1+v_1, u_2+v_2)$ \\
+    \> \hspace{5.4em} =  $(v_1+u_1) + (v_2+u_2)$ by the commutative property of $\mathbb{R}$\\
+    \> \hspace{5.4em} = $(v_1,v_2)+(u_1,u_2)$\\
+    \> \hspace{5.4em} = $\vec{v}+\vec{u}$\\
+    Axiom 2 is closed under the Commutative Property Under Addition.
+\end{tabbing}
+\end{tcolorbox}
+
+%1cc
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=1. c) Solution Continued]
+Since addition on $V$ is the standard addition operation on $\mathbb{R}^2$, Axioms: 2, 3, 4, and 5 hold.\\ \\
+Verifying Axiom 3: \space \space \space Here, $\vec{u}$ and $\vec{v}$ are defined in V, now let $\vec{w}=(w_1,w_2) \in V$      
+\begin{tabbing}
+\hspace*{10em}\= \hspace*{2em} \= \kill % set the tabbings
+    \>   Then, $\vec{u}+(\vec{v}+\vec{w}) = (u_1, u_2) +((v_1,v_2)+(w_1,w_2))$\\
+    \> \hspace{7.9em} =  $(u_1, u_2) +(v_1+w_1,v_2+w_2)$  \\
+    \> \hspace{7.9em} =  $(u_1+(v_1+w_1),u_2 +(v_2+w_2))$ \\
+    \> \hspace{7.9em} =  $((u_1+v_1)+w_1,(u_2+v_2)+w_2)$ \\
+    \> \hspace{7.9em} =  $((u_1,u_2)+(v_1,v_2))+(w_1,w_2)$ \\
+    \> \hspace{7.9em} =  $(\vec{u}+\vec{v})+\vec{w}$ \\
+    Axiom 3 is closed under the Associative Property Under Addition.
+\end{tabbing}
+\end{tcolorbox}
+
+%1d
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=1. d) Solution]
+Since addition on $V$ is the standard addition operation on $\mathbb{R}^2$, Axioms: 2, 3, 4, and 5 hold.\\ \\
+Verifying Axiom 2: \space \space \space Let two vectors $\vec{u} = (u_1,u_2)$ and $\vec{v}=(v_1,v_2) \in V$      
+\begin{tabbing}
+\hspace*{10em}\= \hspace*{2em} \= \kill % set the tabbings
+    \>   Then, $\vec{u}+\vec{v} = (u_1, u_2) +(v_1,v_2) = (u_1+v_1, u_2+v_2)$ \\
+    \> \hspace{5.4em} =  $(v_1+u_1) + (v_2+u_2)$ by the commutative property of $\mathbb{R}$\\
+    \> \hspace{5.4em} = $(v_1,v_2)+(u_1,u_2)$\\
+    \> \hspace{5.4em} = $\vec{v}+\vec{u}$\\
+    Axiom 2 is closed under the Commutative Property Under Addition.
+\end{tabbing}
+\end{tcolorbox}
+
+
+
+\end{document}
